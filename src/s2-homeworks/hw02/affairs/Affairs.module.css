@@ -1,3 +1,8 @@
+.all {
+    margin-left: 70px;
+
+}
+
 .buttonContainer {
     display: flex;
     gap: 24px;
@@ -22,7 +27,7 @@
 
 .button {
     padding: 5px 15px;
-
+    margin-top: 70px;
     background: transparent;
     color: var(--color);
 
@@ -35,6 +40,10 @@
     font-size: 14px;
     line-height: 20px;
     cursor: pointer;
+}
+
+.button:first-child {
+    margin-left: 0;
 }
 
 .button:active {
@@ -50,6 +59,8 @@
 .affairs {
     display: flex;
     gap: 17px;
+    margin-top: 20px;
     flex-wrap: wrap;
     max-width: 450px;
+    padding-bottom: 70px;
 }
