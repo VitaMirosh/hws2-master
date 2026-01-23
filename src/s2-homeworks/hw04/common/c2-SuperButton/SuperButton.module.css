@@ -1,16 +1,21 @@
 .button {
+
 }
 
 .disabled {
+background-color: blue;
 }
 
 .secondary {
+
 }
 
 .default {
+
 }
 
 .red {
+
 }
 
 .default:hover {
@@ -32,5 +37,7 @@
 .red:active {
 }
 
+
 .button:disabled {
+
 }
