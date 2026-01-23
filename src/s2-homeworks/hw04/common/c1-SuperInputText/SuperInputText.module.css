@@ -23,6 +23,7 @@
 }
 
 .errorInput:focus {
+    border-color: #cc0000;
 }
 
 .error {
