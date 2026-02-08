@@ -1,8 +1,34 @@
 .burgerMenuIcon {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    top: 20px;
+    left: 70px;
+
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 70px 15px 70px ;
+
+}
+.header_line {
+    width: 100vw;
+    background: rgba(160, 159, 161, 0.37);
+    position: relative;
 }
 
+.header_line::after { content: "";
+    position: absolute;
+    top: 100%;
+    left: 0; width: 100%;
+    height: 100px; /* глубина плавного перехода */
+    background: linear-gradient(to bottom, rgba(187, 156, 194, 0.11), transparent);
+}
 .header h1 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
 }

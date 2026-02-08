@@ -1,31 +1,79 @@
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: -320px; /* прячем за экраном */
+    width:  320px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 1);
+    transition: left 0.5s ease; /* плавный выезд */
+    z-index: 1000;
 }
 
+
+
 .sidebar.open {
+    left: 0;
+
 }
 
 .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 5, 5, 0.63);
+    z-index: 5;
 }
 
 .nav {
+    margin-left: 70px;
 }
 
 .nav a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    text-decoration: none;
+
+
 }
 
 .nav a:hover {
+    color: rgba(88, 172, 255, 1);
+
 }
 
 .nav a.active {
+    text-decoration: underline;
+    color:rgba(0, 89, 178, 1);
+
 }
+
 .close {
+    border: none;
+    background: none;
+    margin: 15px 25px 25px 270px;
+
 }
 
 .close img {
+    width: 24px;
+    height: 24px;
+    angle: 0deg;
+    opacity: 1;
+    top: 16px;
+    left: 269px;
+
 }
 
-.active{
-   background: #cc0000;
+.active {
+
+
 }
 
 
