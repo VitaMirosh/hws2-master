@@ -1,2 +1,7 @@
 .container {
+    mix-width: 400px;
+    margin:30px 0px 265px 70px;
+    display: flex;
+    flex-direction: row;
+    gap:105px
 }
