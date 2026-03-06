@@ -90,7 +90,7 @@ const HW8 = () => {
                         </tr>
                         </thead>
 
-                        <tbody>{finalPeople}</tbody>
+                        <tbody className={s.row}>{finalPeople}</tbody>
                     </table>
                 </div>
             </div>

@@ -1,23 +1,77 @@
 .item {
+    padding-left: 20px;
+    position: relative;
+
+}
+.item::after{
+    content: "";
+    top:0;
+    left:0;
+    position: absolute;
+    width: 600px;
+    border-bottom: 2px solid rgba(229, 229, 229, 1);
 }
 
-.item:last-of-type {
+
+.item td:last-child{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 14px;
+
+
 }
 
 .users {
+    width: 100%;
+    height: 100%;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin: 30px 0 20px 0;
 }
 
 .container {
+    max-width: 605px;
+    margin-left: 70px;
+
+
 }
 
 .thead {
+    position: relative;
+    height: 35px;
+    background-color: rgba(229, 229, 229, 1);
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 14px;
+
+}
+.thead::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: rgba(229, 229, 229, 1);
+    width: 600px;
+    height: 41px;
+    z-index: -1;
+
 }
 
 .nameCol {
+    padding: 10px 0 10px 20px;
 }
 
 .ageCol {
+
 }
+
+
+
+
+
+
+
