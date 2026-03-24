@@ -17,7 +17,32 @@ html {
     background-color: var(--background);
     color: var(--color);
 }
+.text{
+    margin: 35px 0 10px 70px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+}
 
 .select {
+    width: 170px;
+    margin: 0 0 280px 70px;
+    height:35px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+}
+.light {
+    background: white;
+    color: black;
+}
 
+.blue {
+    background: rgba(221, 238, 255, 1);
+    color: #003366;
+}
+
+.dark {
+    background: rgba(33, 42, 52, 1);
+    color: white;
 }
