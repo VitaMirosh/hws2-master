@@ -5,13 +5,27 @@
     top: 20px;
     left: 70px;
 
+
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     margin: 20px 70px 15px 70px ;
+    position: relative;
 
+}
+.header::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 500%;
+    height: 65px;
+    margin-left: -100px;
+   /* глубина плавного перехода */
+    background: white;
+    z-index: -1;
 }
 .header_line {
     width: 100vw;
@@ -26,6 +40,7 @@
     height: 100px; /* глубина плавного перехода */
     background: linear-gradient(to bottom, rgba(187, 156, 194, 0.11), transparent);
 }
+
 .header h1 {
     font-family: Montserrat;
     font-weight: 600;
