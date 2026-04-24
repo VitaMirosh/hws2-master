@@ -1,7 +1,27 @@
-.tech {
+.tech:first-child {
+    margin-top: 20px;
+}
+.tech{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 
+
+}
+.hw14 {
+    margin: 20px 0 165px 70px;
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
 }
 
 .loading {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    vertical-align: middle;
+    align-self: flex-end;
+    color: rgba(77, 77, 77, 1);
 
 }

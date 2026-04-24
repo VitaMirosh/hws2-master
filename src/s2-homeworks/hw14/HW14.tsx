@@ -35,7 +35,8 @@ const HW14 = () => {
     getTechs(value)
       .then((res) => {
         if (res?.data?.techs) {
-          setTechs(res.data.techs)   // ← вот это обязательно!
+          setTechs(res.data.techs)
+          setTechs(prev => [...prev, "#hw14-tech-css"])
         }
         let response = res?.data?.techs.find(tech => tech === value)
         if (response) {
@@ -75,7 +76,7 @@ const HW14 = () => {
     <div id={'hw14'}>
       <div className={s2.hwTitle}>Homework #14</div>
 
-      <div className={s2.hw}>
+      <div className={s.hw14}>
         <SuperDebouncedInput
           id={'hw14-super-debounced-input'}
           value={find}
