@@ -32,6 +32,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             <Pagination
                 id={id + '-pagination'}
                 sx={{
+                  widthMax:"500px"
                     // стили для Pagination // пишет студент
                 }}
                 page={page}
@@ -42,7 +43,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             />
 
             <span className={s.text1}>
-                показать
+                Показать
             </span>
 
             <SuperSelect

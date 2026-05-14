@@ -106,6 +106,7 @@ const HW15 = () => {
 
     setPage(+params.page || 1)
     setCount(+params.count || 4)
+    setSort(params.sort || '')
   }, [])
 
   const mappedTechs = techs.map(t => (
@@ -124,8 +125,8 @@ const HW15 = () => {
     <div id={'hw15'}>
       <div className={s2.hwTitle}>Homework #15</div>
 
-      <div className={s2.hw}>
-        {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
+      <div className={idLoading ? s.hw14 :s.hw15}>
+        {idLoading && <div id={'hw15-loading'} className={s.loading}></div>}
 
         <SuperPagination
           page={page}
