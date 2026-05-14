@@ -1,27 +1,95 @@
-.tech {
+.hw15 {
+
+    margin: 35px 0 35px 70px;
+    max-width: 605px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hw14 {
+    composes: hw15;
+    opacity: 10%;
+
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top-color: red;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rowHeader {
     width: 50vw;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(229, 229, 229, 1);
+    align-items: center;
+    padding-left: 15px;
+
+}
+
+.tech {
+    margin-right: 20px;
+
+
+}
+
+.developerHeader {
+    display: flex;
+    padding-left: 215px;
+    gap: 8px;
 }
 
 .developer {
+    display: flex;
+    flex-direction: column;
 
 }
 
 .techHeader {
-    width: 50vw;
-}
-
-.developerHeader {
+    display: flex;
+    gap: 8px;
 
 }
+
 
 .row {
     display: flex;
+    max-width: 365px;
+    padding-left: 15px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    position: relative;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;;
+
 }
 
-.rowHeader {
-    display: flex;
+.row::after {
+    content: "";
+    position: absolute;
+    margin-left: -15px;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+    width: 50vw;
+    margin-top: -12px;
 }
 
-.loading {
 
-}
